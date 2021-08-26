@@ -1,0 +1,362 @@
+/* POLICE */
+
+@font-face 
+{
+    font-family: 'Raleway' ;
+    src: url('Docs/Raleway_Font/static/Raleway-Medium.ttf') format('truetype');
+}
+
+html
+{
+    font-family: Raleway, sans-serif;
+    width: 375px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+aside a:visited , header nav a:visited
+{
+    color: black;
+}
+
+img
+{
+    object-fit: cover;
+}
+
+#BLEU
+{
+    color: #0065FC;
+    font-size: 0.8em;
+}
+
+#GRIS
+{
+    color: #F2F2F2;
+    font-size: 0.8em;
+}
+
+
+
+/* EN-TETE */
+
+header div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+header div a
+{
+    font-weight: bolder;
+    color: #0065FC;
+    margin-top: 15px;
+}
+
+header nav
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a:hover
+{
+    color: #0065FC;
+    border-bottom: #0065FC solid 3px;
+}
+
+header nav div
+{
+    width: 187px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* RECHERCHE */
+
+header form
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#INTFORM
+{
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    color: black;
+}
+
+header section
+{
+    margin: 15px;
+}
+
+header section h4
+{
+    padding-top: 15px;
+}
+
+header ul
+{
+    list-style-type: none;
+}
+
+#MMA
+{
+    height: 15px;
+    width: 15px;
+    background-color: #F2F2F2 ;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 12px 0px 0px 12px;
+}
+
+#LOUPE
+{
+    height: 15px;
+    width: 15px;
+    color: white;
+    background-color: #0065FC;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+input
+{
+    border: none;
+    width: 75%;
+}
+
+#BARECH
+{
+    border: #F2F2F2 1px solid ;
+    border-radius: 12px;
+}
+
+
+
+/* FILTRES */
+
+header ul
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+header li
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    border: solid #d9d9d9 2px ;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+header li:hover
+{
+    background-color: #DEEBFF;
+}
+
+header li span
+{
+    color: #0065FC ;
+    background-color: #DEEBFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header li p
+{
+    margin: 15px;
+    font-weight: bold;
+}
+
+#INFO
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* INFO */
+
+#INFO i
+{
+    background-color: #0065FC ;
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    border: solid 2px #d9d9d9 ;
+    padding: 0px;
+}
+
+#INFO span
+{
+    margin-left: 10px;
+}
+
+#INFO
+{
+    margin-bottom: 30px;
+}
+
+
+
+/* POPULAIRES */
+
+#POPET
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#POPET i
+{
+    padding-top: 20px;
+    font-size: 1.8em;
+}
+
+#POP
+{
+    background-color: #F2F2F2;
+    padding: 12px;
+}
+
+#POP article
+{
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#POP article a
+{
+    display: flex;
+    flex-direction: row;
+    height: 135px;
+}
+
+#POP article img
+{
+    width: 134px;
+    height: 127px;
+    border-radius: 20px 0px 0px 20px;
+    margin: 5px;
+}
+
+#POP article div
+{
+    margin-left: 10px;
+}
+
+#POP article div h4
+{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#POP article div p
+{
+    margin-top: 10px;
+}
+
+#POP article div span
+{
+    position:absolute;
+    margin-top: 15px;
+}
+
+
+
+/* VIGNETTES */
+
+article
+{
+    width: 335px;
+}
+
+#HEB , #ACT
+{
+    padding: 20px;
+}
+
+#HEB a img
+{
+    height: 115px;
+    width: 317px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 4px;
+}
+
+#HEB article , #ACT article
+{
+    height: 200px;
+    width: 325px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 10px whitesmoke;
+}
+
+#HEB h4 , #HEB p , #HEB span
+{
+    margin: 5px;
+}
+
+#ACT a img
+{
+    height: 135px;
+    width: 325px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#ACT article
+{
+    margin-bottom: 25px;
+}
+
+#ACT h4
+{
+    margin-left: 25px;
+}
+
+
+
+/* PIED DE PAGE */
+
+footer
+{
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+footer div
+{
+    padding-bottom: 15px;
+}
