@@ -12,6 +12,10 @@ html
     width: 375px;
 }
 
+
+
+/* decorations generales */
+
 a
 {
     text-decoration: none;
@@ -26,6 +30,9 @@ img
 {
     object-fit: cover;
 }
+
+
+/* ETOILES */
 
 #BLEU
 {
