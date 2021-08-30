@@ -9,7 +9,6 @@
 html
 {
     font-family: Raleway, sans-serif;
-    width: 375px;
 }
 
 
@@ -152,6 +151,7 @@ input
 {
     border: #F2F2F2 1px solid ;
     border-radius: 12px;
+    width: 320px;
 }
 
 
@@ -202,15 +202,16 @@ header li p
     font-weight: bold;
 }
 
+
+
+/* INFO */
+
 #INFO
 {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
-
-
-
-/* INFO */
 
 #INFO i
 {
@@ -240,7 +241,7 @@ header li p
 #POPET
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #POPET i
@@ -252,14 +253,16 @@ header li p
 #POP
 {
     background-color: #F2F2F2;
-    padding: 12px;
+    width: 375px;
+    padding-bottom: 17px;
+    margin: auto;
 }
 
 #POP article
 {
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin: 22px;
 }
 
 #POP article a
@@ -311,6 +314,8 @@ article
 #HEB , #ACT
 {
     padding: 20px;
+    margin: auto;
+    width: 375px;
 }
 
 #HEB a img
