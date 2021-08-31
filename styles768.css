@@ -61,13 +61,14 @@ header div a
     font-weight: bolder;
     color: #0065FC;
     margin-top: 15px;
+    font-size: 1.3em;
 }
 
 header nav
 {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header nav a:hover
@@ -78,21 +79,76 @@ header nav a:hover
 
 header nav div
 {
-    width: 187px;
     height: 45px;
     display: flex;
     justify-content: center;
+}
+
+header nav a
+{
+    width: 50%;
+    border-bottom: #F2F2F2 solid 3px;
 }
 
 
 
 /* RECHERCHE */
 
-header form
+header section
 {
+    margin: 10px;
+}
+
+header section h4
+{
+    padding-top: 15px;
+}
+
+header section p
+{
+    padding-bottom: 10px;
+}
+
+header ul
+{
+    list-style-type: none;
+}
+
+    /* icones */
+
+#MMA
+{
+    height: 15px;
+    width: 15px;
+    background-color: #F2F2F2 ;
+    padding: 15px;
+    border-radius: 12px 0px 0px 12px;
+}
+
+#LOUPE
+{
+    height: 15px;
+    color: white;
+    background-color: #0065FC;
+    padding: 15px;
+    border-radius: 0px 12px 12px 0px;
+    font-weight: bold;
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    align-items: center;
+}
+
+#TXT
+{
+    padding-top: 8px;
+}
+
+    /* barre de recherche */
+
+#BARECH
+{
+    border: #F2F2F2 1px solid ;
+    border-radius: 12px;
+    width: 700px;
 }
 
 #INTFORM
@@ -101,57 +157,12 @@ header form
     font-size: larger;
     margin-left: 10px;
     color: black;
-}
-
-header section
-{
-    margin: 15px;
-}
-
-header section h4
-{
-    padding-top: 15px;
-}
-
-header ul
-{
-    list-style-type: none;
-}
-
-#MMA
-{
-    height: 15px;
-    width: 15px;
-    background-color: #F2F2F2 ;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    border-radius: 12px 0px 0px 12px;
-}
-
-#LOUPE
-{
-    height: 15px;
-    width: 15px;
-    color: white;
-    background-color: #0065FC;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    border-radius: 12px;
-}
-
-input
-{
     border: none;
-    width: 75%;
 }
 
-#BARECH
+#ICL
 {
-    border: #F2F2F2 1px solid ;
-    border-radius: 12px;
-    width: 320px;
+    display: none;
 }
 
 
@@ -211,6 +222,7 @@ header li p
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 30px;
 }
 
 #INFO i
@@ -229,48 +241,38 @@ header li p
     margin-left: 10px;
 }
 
-#INFO
-{
-    margin-bottom: 30px;
-}
-
-
-
-/* Echange POP & HEB */
-
-#POPHEB
-{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-}
 
 /* POPULAIRES */
 
 #POPET
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
 #POPET i
 {
-    padding-top: 20px;
     font-size: 1.8em;
+    padding-top: 20px;
 }
 
-#POP , #HEB
+#POP
 {
     background-color: #F2F2F2;
+    padding-bottom: 10px;
     width: 375px;
-    padding-bottom: 17px;
 }
 
 #POP article
 {
     background-color: white;
     border-radius: 20px;
-    margin: 22px;
+    padding-bottom: 3px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
 }
 
 #POP article a
@@ -306,50 +308,62 @@ header li p
 
 #POP article div span
 {
-    position:absolute;
-    margin-top: 15px;
+
 }
 
 
 
-/* VIGNETTES */
+/* inversion POP-HEB */
 
-article
+#POPHEB
 {
-    width: 335px;
-    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
-#HEB article , #ACT article
+/* HEBERGEMENTS */
+
+#HEB
 {
-    height: 200px;
-    width: 325px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 10px 10px 10px whitesmoke;
-}
-
-
-
-/* HEBERGEMENT */
-
-#HEB h1
-{
-    margin-left: 20px;
+    padding: 20px;
+    width: 375px;
+    background-color: #F2F2F2;
 }
 
 #HEB a img
 {
-    height: 115px;
-    width: 317px;
+    height: 135px;
+    width: 97%;
     border-radius: 20px 20px 0px 0px;
-    margin: 4px;
+    padding: 5px;
+}
+
+#HEB article
+{
+    height: 220px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 15px 2px #d9d9d9;
+    padding-bottom: 10px;
 }
 
 #HEB h4 , #HEB p , #HEB span
 {
     margin: 5px;
+}
+
+#HEB div
+{
+    margin-left: 10px;
+}
+
+#AFF
+{
+    padding-top: 20px;
 }
 
 
@@ -359,20 +373,51 @@ article
 #ACT
 {
     padding: 20px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#ACT a img
+#ACT h1
 {
-    height: 135px;
-    width: 325px;
-    border-radius: 20px 20px 0px 0px;
+    width: 100%;
 }
 
 #ACT article
 {
+    width: 375px;
     margin-bottom: 25px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 15px 2px #d9d9d9;
+}
+
+#PACT
+{
+    height: 200px;
+}
+
+#PACT a img 
+{
+    height: 140px;
+}
+
+#GACT
+{
+    height: 425px;
+}
+
+#GACT a img
+{
+    height: 340px;
+}
+
+#ACT a img
+{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 #ACT h4
@@ -380,17 +425,6 @@ article
     margin-left: 25px;
 }
 
-#GACT
-{
-    order: 1;
-    align-self: flex-start;
-}
-
-#PACT
-{
-    order: 2;
-    align-self: flex-end;
-}
 
 
 /* PIED DE PAGE */
@@ -399,6 +433,9 @@ footer
 {
     background-color: #F2F2F2;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer div

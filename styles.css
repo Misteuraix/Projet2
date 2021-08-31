@@ -153,6 +153,11 @@ header ul
     border: none;
 }
 
+#TXT
+{
+    display: none;
+}
+
 
 
 /* FILTRES */
@@ -295,10 +300,8 @@ header li p
 
 #POP article div span
 {
-    position:absolute;
-    margin-top: 15px;
+    
 }
-
 
 
 /* HEBERGEMENTS */
