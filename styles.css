@@ -67,7 +67,7 @@ header nav
 {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header nav a:hover
@@ -78,34 +78,24 @@ header nav a:hover
 
 header nav div
 {
-    width: 187px;
     height: 45px;
     display: flex;
     justify-content: center;
+}
+
+header nav a
+{
+    width: 50%;
+    border-bottom: #F2F2F2 solid 3px;
 }
 
 
 
 /* RECHERCHE */
 
-header form
-{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-#INTFORM
-{
-    font-weight: bolder;
-    font-size: larger;
-    margin-left: 10px;
-    color: black;
-}
-
 header section
 {
-    margin: 15px;
+    margin: 10px;
 }
 
 header section h4
@@ -113,18 +103,23 @@ header section h4
     padding-top: 15px;
 }
 
+header section p
+{
+    padding-bottom: 10px;
+}
+
 header ul
 {
     list-style-type: none;
 }
+
+    /* icones */
 
 #MMA
 {
     height: 15px;
     width: 15px;
     background-color: #F2F2F2 ;
-    display: flex;
-    justify-content: center;
     padding: 15px;
     border-radius: 12px 0px 0px 12px;
 }
@@ -135,23 +130,27 @@ header ul
     width: 15px;
     color: white;
     background-color: #0065FC;
-    display: flex;
-    justify-content: center;
     padding: 15px;
     border-radius: 12px;
 }
 
-input
-{
-    border: none;
-    width: 75%;
-}
+    /* barre de recherche */
 
 #BARECH
 {
     border: #F2F2F2 1px solid ;
     border-radius: 12px;
-    width: 320px;
+    width: 90%;
+    margin: auto;
+}
+
+#INTFORM
+{
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    color: black;
+    border: none;
 }
 
 
@@ -211,6 +210,7 @@ header li p
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 30px;
 }
 
 #INFO i
@@ -229,40 +229,37 @@ header li p
     margin-left: 10px;
 }
 
-#INFO
-{
-    margin-bottom: 30px;
-}
-
-
 
 /* POPULAIRES */
 
 #POPET
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
 #POPET i
 {
-    padding-top: 20px;
     font-size: 1.8em;
+    padding-top: 20px;
 }
 
 #POP
 {
     background-color: #F2F2F2;
-    width: 375px;
-    padding-bottom: 17px;
-    margin: auto;
+    padding-bottom: 10px;
 }
 
 #POP article
 {
     background-color: white;
     border-radius: 20px;
-    margin: 22px;
+    padding-bottom: 3px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
 }
 
 #POP article a
@@ -304,36 +301,33 @@ header li p
 
 
 
-/* VIGNETTES */
+/* HEBERGEMENTS */
 
-article
-{
-    width: 335px;
-}
-
-#HEB , #ACT
+#HEB
 {
     padding: 20px;
     margin: auto;
-    width: 375px;
+    width: 90%;
 }
 
 #HEB a img
 {
-    height: 115px;
-    width: 317px;
+    height: 135px;
+    width: 97%;
     border-radius: 20px 20px 0px 0px;
-    margin: 4px;
+    padding: 5px;
 }
 
-#HEB article , #ACT article
+#HEB article
 {
-    height: 200px;
-    width: 325px;
+    height: 220px;
+    width: 90%;
+    margin: auto;
     margin-bottom: 15px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 10px 10px 10px whitesmoke;
+    box-shadow: 3px 3px 15px 2px #d9d9d9;
+    padding-bottom: 10px;
 }
 
 #HEB h4 , #HEB p , #HEB span
@@ -341,16 +335,43 @@ article
     margin: 5px;
 }
 
-#ACT a img
+#HEB div
 {
-    height: 135px;
-    width: 325px;
-    border-radius: 20px 20px 0px 0px;
+    margin-left: 10px;
+}
+
+#AFF
+{
+    padding-top: 20px;
+}
+
+
+
+/* ACTIVITES */
+
+#ACT
+{
+    padding: 20px;
+    margin: auto;
+    width: 90%;
 }
 
 #ACT article
 {
+    height: 200px;
+    width: 90%;
+    margin: auto;
     margin-bottom: 25px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 15px 2px #d9d9d9;
+}
+
+#ACT a img
+{
+    height: 135px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 #ACT h4

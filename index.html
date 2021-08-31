@@ -3,10 +3,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css" media="(max-width: 767px)">
-        <link rel="stylesheet" href="styles768.css" media="(min-width: 768px) and (max-width: 991px)">
-        <link rel="stylesheet" href="styles992.css" media="(min-width: 992px) and (max-width: 1199px)">
-        <link rel="stylesheet" href="styles1200.css" media="(min-width: 1200px)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" media="screen and (max-width: 767px)">
+        <link rel="stylesheet" href="styles768.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+        <link rel="stylesheet" href="styles992.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+        <link rel="stylesheet" href="styles1200.css" media="screen and (min-width: 1200px)">
         <script src="https://kit.fontawesome.com/17718b4c0c.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
@@ -24,8 +25,8 @@
 
             <!-- NAVIGATION -->
             <nav>
-                <a href="#HEB"> <div> <p> Hébergements </p> </div> </a>
-                <a href="#ACT"> <div> <p> Activités </p> </div> </a>
+                <a href="#HEB"> <div> Hébergements </div> </a>
+                <a href="#ACT"> <div> Activités </div> </a>
             </nav>
 
             <!-- RECHERCHE -->
@@ -34,11 +35,11 @@
                 <p> En plein centre ville ou en pleine nature </p>
                 
                 <form method="POST" action="" id="BARECH">
-                    <p>
+                    <div>
                         <div id="MMA"> <i class="fas fa-map-marker-alt"></i> </div>
                         <input type="text" name="Recherche" placeholder="Marseille, France" id="INTFORM"/>
                         <div id="LOUPE"> <i class="fas fa-search"></i> </div>
-                    </p>
+                    </div>
                 </form>
             
                 <!-- FILTRES -->
@@ -265,7 +266,7 @@
                 </div>
             </a></article>
 
-            <h4> Afficher plus</h4>
+            <h4 id="AFF"> Afficher plus</h4>
 
         </aside>
         </div>
@@ -276,7 +277,7 @@
             <h1> Activités à Marseille</h1>
 
             <!-- vignettes -->
-            <article><a href="#">
+            <article id="GACT"><a href="#">
                 <picture>
                     <source srcset="Docs/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" media=" (min-width: 1200px) " />
                     <source srcset="Docs/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" media=" (min-width: 992px) and (max-width: 1199px) " />
@@ -286,7 +287,7 @@
                 <h4> Vieux Port</h4>
             </a></article>
 
-            <article><a href="#">
+            <article id="PACT"><a href="#">
                 <picture>
                     <source srcset="Docs/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" media=" (min-width: 1200px) " />
                     <source srcset="Docs/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" media=" (min-width: 992px) and (max-width: 1199px) " />
@@ -296,7 +297,7 @@
                 <h4> Fort de Pomègues</h4>
             </a></article>
 
-            <article><a href="#">
+            <article id="PACT"><a href="#">
                 <picture>
                     <source srcset="Docs/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" media=" (min-width: 1200px) " />
                     <source srcset="Docs/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" media=" (min-width: 992px) and (max-width: 1199px) " />
@@ -306,7 +307,7 @@
                 <h4> Iles du Frioul</h4>
             </a></article>
 
-            <article><a href="#">
+            <article id="GACT"><a href="#">
                 <picture>
                     <source srcset="Docs/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" media=" (min-width: 1200px) " />
                     <source srcset="Docs/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" media=" (min-width: 992px) and (max-width: 1199px) " />
@@ -316,7 +317,7 @@
                 <h4> Parc National des Calanques</h4>
             </a></article>
 
-            <article><a href="#">
+            <article id="PACT"><a href="#">
                 <picture>
                     <source srcset="Docs/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" media=" (min-width: 1200px) " />
                     <source srcset="Docs/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" media=" (min-width: 992px) and (max-width: 1199px) " />
@@ -326,7 +327,7 @@
                 <h4> Notre-Dame-de-la-Garde</h4>
             </a></article>
 
-            <article><a href="#">
+            <article id="PACT"><a href="#">
                 <picture>
                     <source srcset="Docs/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" media=" (min-width: 1200px) " />
                     <source srcset="Docs/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" media=" (min-width: 992px) and (max-width: 1199px) " />
