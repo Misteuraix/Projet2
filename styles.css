@@ -202,7 +202,9 @@ header li span
 
 header li p
 {
-    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 8px;
     font-weight: bold;
 }
 

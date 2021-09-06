@@ -149,6 +149,7 @@ header ul
     border: #F2F2F2 1px solid ;
     border-radius: 12px;
     width: 450px;
+    margin-bottom: 15px;
 }
 
 #INTFORM
@@ -169,12 +170,25 @@ header ul
 
 /* FILTRES */
 
+#filtres
+{
+    display: flex;
+    flex-direction: row;   
+}
+
+#filtres h4
+{
+    padding-top: 7px;
+    margin-right: 20px;
+}
+
 header ul
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0px;
+    width: 775px;
 }
 
 header li
@@ -321,21 +335,33 @@ header li p
 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* HEBERGEMENTS */
 
+#HEB h1
+{
+    margin-left: 25px;
+}
+
+#vignheb
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 #HEB
 {
     padding: 20px;
-    width: 375px;
     background-color: #F2F2F2;
+    width: 550px;
 }
 
 #HEB a img
 {
-    height: 135px;
+    height: 110px;
     width: 97%;
     border-radius: 20px 20px 0px 0px;
     padding: 5px;
@@ -343,8 +369,8 @@ header li p
 
 #HEB article
 {
-    height: 220px;
-    width: 90%;
+    height: 185px;
+    width: 250px;
     margin: auto;
     margin-bottom: 15px;
     border-radius: 20px;
@@ -355,7 +381,8 @@ header li p
 
 #HEB h4 , #HEB p , #HEB span
 {
-    margin: 5px;
+    margin: 2px;
+    margin-left: 5px;
 }
 
 #HEB div
@@ -435,12 +462,17 @@ footer
 {
     background-color: #F2F2F2;
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 footer div
 {
     padding-bottom: 15px;
+}
+
+#pied
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
 }
