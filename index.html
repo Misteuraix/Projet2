@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" media="screen and (max-width: 767px)">
-        <link rel="stylesheet" href="styles768.css" media="screen and (min-width: 768px) and (max-width: 991px)">
-        <link rel="stylesheet" href="styles992.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+        <link rel="stylesheet" href="styles.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="styles768.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+        <link rel="stylesheet" href="styles992.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
         <link rel="stylesheet" href="styles1200.css" media="screen and (min-width: 1200px)">
         <script src="https://kit.fontawesome.com/17718b4c0c.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
@@ -19,14 +19,14 @@
             <!-- LOGO INSCRIRE-->
             <div>
                 <img src="Docs/images/logo/Reservia.svg" alt="Logo" />
-                <a href="#"> S'inscrire </a>
             </div>
 
 
             <!-- NAVIGATION -->
             <nav>
-                <a href="#HEB"> <div> Hébergements </div> </a>
-                <a href="#ACT"> <div> Activités </div> </a>
+                <a href="#" id="inscription"> S'inscrire </a>
+                <a href="#HEB" id="navha"> <div> Hébergements </div> </a>
+                <a href="#ACT" id="navha"> <div> Activités </div> </a>
             </nav>
 
             <!-- RECHERCHE -->
@@ -35,13 +35,11 @@
                 <p> En plein centre ville ou en pleine nature </p>
                 
                 <form method="POST" action="" id="BARECH">
-                    <div>
-                        <div id="MMA"> <i class="fas fa-map-marker-alt"></i> </div>
-                        <input type="text" name="Recherche" placeholder="Marseille, France" id="INTFORM"/>
-                        <div id="LOUPE"> 
-                            <i class="fas fa-search" id="ICL"></i>
-                            <p id="TXT"> Rechercher </p>
-                        </div>
+                    <div id="MMA"> <i class="fas fa-map-marker-alt"></i> </div>
+                    <div id="entree"> <input type="text" name="Recherche" placeholder="Marseille, France" id="INTFORM"/> </div>
+                    <div id="LOUPE"> 
+                        <i class="fas fa-search" id="ICL"></i>
+                        <p id="TXT"> Rechercher </p>
                     </div>
                 </form>
             
@@ -66,7 +64,7 @@
 
                 <!-- INFO -->
                 <div id="INFO">
-                <i class="fas fa-info-circle"></i>
+                    <i class="fas fa-info"></i>
                 <span>Plus de 500 logements sont disponibles dans cette ville</span>
                 </div>
 
@@ -147,8 +145,8 @@
 
         <!-- HEBERGEMENTS -->
 
-        <aside id="HEB">
-            <h1> Hébergements à Marseille</h1>
+        <main id="HEB">
+            <h2> Hébergements à Marseille</h2>
 
             <!-- vignettes -->
             <span id="vignheb">
@@ -275,13 +273,13 @@
 
             <h4 id="AFF"> Afficher plus</h4>
 
-        </aside>
+        </main>
         </div>
 
         <!-- ACTIVITES -->
 
         <aside id="ACT">
-            <h1> Activités à Marseille</h1>
+            <h2> Activités à Marseille</h2>
 
             <!-- vignettes -->
             

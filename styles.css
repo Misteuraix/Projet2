@@ -15,9 +15,15 @@ html
 
 /* decorations generales */
 
+body
+{
+    margin: 0px;
+}
+
 a
 {
     text-decoration: none;
+    color: black;
 }
 
 aside a:visited , header nav a:visited
@@ -51,61 +57,60 @@ img
 
 header div
 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
+    width: 100px;
+    margin: 15px 0px 20px 15px;
 }
 
-header div a
+#inscription
 {
-    font-weight: bolder;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    margin-bottom: 20px;
     color: #0065FC;
-    margin-top: 15px;
+    font-weight: bold;
+    width: 100px;
 }
 
 header nav
 {
-    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-}
-
-header nav a:hover
-{
-    color: #0065FC;
-    border-bottom: #0065FC solid 3px;
-}
-
-header nav div
-{
-    height: 45px;
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header nav a
 {
+
     width: 50%;
-    border-bottom: #F2F2F2 solid 3px;
+    display: flex;
+    justify-content: center;
+}
+
+#navha
+{
+    border-bottom: solid 3px #F2F2F2;
+    height: 45px;
+}
+
+#navha:hover
+{
+    border-bottom: solid 3px #0065FC;
+    color: #0065FC;
 }
 
 
 
 /* RECHERCHE */
 
-header section
+header section h1
 {
-    margin: 10px;
-}
-
-header section h4
-{
-    padding-top: 15px;
+    padding: 10px 0px 0px 20px;
+    font-size: 1.4em;
 }
 
 header section p
 {
-    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 header ul
@@ -122,6 +127,8 @@ header ul
     background-color: #F2F2F2 ;
     padding: 15px;
     border-radius: 12px 0px 0px 12px;
+    display: flex;
+    justify-content: center;
 }
 
 #LOUPE
@@ -129,10 +136,18 @@ header ul
     height: 15px;
     width: 15px;
     color: white;
-    background-color: #0065FC;
     padding: 15px;
     border-radius: 12px;
+    background-color: #0065FC;
+    display: flex;
+    justify-content: center;
 }
+
+#TXT
+{
+    display: none;
+}
+
 
     /* barre de recherche */
 
@@ -140,8 +155,15 @@ header ul
 {
     border: #F2F2F2 1px solid ;
     border-radius: 12px;
-    width: 90%;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 20px 0px 20px;
+}
+
+#BARECH div
+{
+    margin: 0px;
 }
 
 #INTFORM
@@ -151,16 +173,23 @@ header ul
     margin-left: 10px;
     color: black;
     border: none;
+    width: 100%;
+    height: 95%;
 }
 
-#TXT
+#entree
 {
-    display: none;
+    width: 70%;
 }
 
 
 
 /* FILTRES */
+
+header h4
+{
+    margin-left: 20px;
+}
 
 header ul
 {
@@ -179,8 +208,7 @@ header li
     width: auto;
     border: solid #d9d9d9 2px ;
     border-radius: 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0px 0px 15px 20px ;
 }
 
 header li:hover
@@ -202,9 +230,7 @@ header li span
 
 header li p
 {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 8px;
+    padding: 0px 10px 0px 10px;
     font-weight: bold;
 }
 
@@ -217,18 +243,21 @@ header li p
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 30px;
+    width: 95%;
+    margin-left: 20px;
 }
 
 #INFO i
 {
-    background-color: #0065FC ;
-    color: white;
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
-    border: solid 2px #d9d9d9 ;
-    padding: 0px;
+    color: #0065FC;
+    border: solid #F2F2F2 2px;
+    border-radius: 25px;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
 }
 
 #INFO span
@@ -243,8 +272,7 @@ header li p
 {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    padding-bottom: 0px;
+    padding: 20px 20px 0px 20px;
 }
 
 #POPET i
@@ -256,68 +284,63 @@ header li p
 #POP
 {
     background-color: #F2F2F2;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 #POP article
 {
     background-color: white;
     border-radius: 20px;
-    padding-bottom: 3px;
-    margin: auto;
-    margin-bottom: 20px;
     width: 90%;
+    margin: 0px 20px 10px 20px;
 }
 
 #POP article a
 {
     display: flex;
     flex-direction: row;
-    height: 135px;
+    height: 150px;
 }
 
 #POP article img
 {
     width: 134px;
-    height: 127px;
+    height: 94%;
     border-radius: 20px 0px 0px 20px;
     margin: 5px;
 }
 
+#POP article h4 , #POP article p
+{
+    margin: 12px 0px 0px 12px ;
+}
+
 #POP article div
 {
-    margin-left: 10px;
+    height: 100%;
+    position: relative;
 }
 
-#POP article div h4
+#POP article span
 {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
 }
 
-#POP article div p
-{
-    margin-top: 10px;
-}
-
-#POP article div span
-{
-    
-}
 
 
 /* HEBERGEMENTS */
 
-#HEB
+
+#HEB h2
 {
-    padding: 20px;
-    margin: auto;
-    width: 90%;
+    margin: 30px 0px 20px 20px;
 }
 
 #HEB a img
 {
-    height: 135px;
+    height: 125px;
     width: 97%;
     border-radius: 20px 20px 0px 0px;
     padding: 5px;
@@ -327,46 +350,35 @@ header li p
 {
     height: 220px;
     width: 90%;
-    margin: auto;
-    margin-bottom: 15px;
+    margin: 0px 20px 15px 20px ;
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
-    padding-bottom: 10px;
 }
 
-#HEB h4 , #HEB p , #HEB span
+#vignheb div h4 , #vignheb div p , #vignheb div span
 {
-    margin: 5px;
-}
-
-#HEB div
-{
-    margin-left: 10px;
+    margin: 0px 0px 8px 15px;
 }
 
 #AFF
 {
-    padding-top: 20px;
+    padding: 10px 0px 0px 20px;
 }
 
 
 
 /* ACTIVITES */
 
-#ACT
+#ACT h2
 {
-    padding: 20px;
-    margin: auto;
-    width: 90%;
+    margin: 45px 20px 20px 25px ;
 }
 
 #ACT article
 {
-    height: 200px;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 25px;
+    height: 170px;
+    margin: 0px 20px 20px 20px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
@@ -374,14 +386,19 @@ header li p
 
 #ACT a img
 {
-    height: 135px;
+    height: 115px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 
 #ACT h4
 {
-    margin-left: 25px;
+    margin: 12px 0px 0px 20px;
+}
+
+#ACT
+{
+    padding-bottom: 25px;
 }
 
 
@@ -391,10 +408,9 @@ header li p
 footer
 {
     background-color: #F2F2F2;
-    padding: 20px;
 }
 
 footer div
 {
-    padding-bottom: 15px;
+    padding: 20px 0px 0px 30px;
 }
