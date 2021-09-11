@@ -55,7 +55,7 @@ img
 
 /* EN-TETE */
     /*logo*/
-header div
+#LOGO
 {
     width: 100px;
     margin: 15px 0px 20px 15px;
@@ -66,8 +66,10 @@ header div
     color: #0065FC;
     font-weight: bold;
     order: 2;
-
+    display: flex;
+    align-items: center;
 }
+
     /* navigation */
 header nav
 {
@@ -80,18 +82,15 @@ header nav
     width: 50%;
 }
 
-header nav a
-{
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
 #navha
 {
     border-top: solid 3px #F2F2F2;
     height: 65px;
     width: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 #navha:hover
@@ -252,7 +251,7 @@ header li p
     flex-direction: row;
     justify-content: flex-start;
     width: 95%;
-    margin-left: 20px;
+    margin: 0px 0px 20px 20px;
 }
 
 #INFO i
@@ -303,8 +302,8 @@ header li p
 {
     background-color: white;
     border-radius: 20px;
-    width: 350px;
-    margin: 0px 0px 10px 20px;
+    width: 47%;
+    margin: 0px 0px 10px 10px;
 }
 
 #POP article a
@@ -361,8 +360,8 @@ header li p
 #HEB article
 {
     height: 220px;
-    width: 350px;
-    margin: 0px 0px 10px 20px ;
+    width: 47%;
+    margin: 0px 0px 10px 10px ;
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
@@ -400,18 +399,23 @@ header li p
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
-    width: 350px;
-    margin: 0px 0px 10px 20px;
+    margin: 0px 0px 20px 20px;
+}
+
+#ACT span
+{
+    width: 48%;
 }
 
 #PACT
 {
-    height: 170px;
+    height: 190px;
 }
 
 #GACT
 {
-    height: 350px;
+    height: 400px;
+    width: 48%;
 }
 
 #ACT a img
@@ -422,12 +426,12 @@ header li p
 
 #PACT a img
 {
-    height: 115px;
+    height: 135px;
 }
 
 #GACT a img
 {
-    height: 285px;
+    height: 335px;
 }
 
 #ACT h4

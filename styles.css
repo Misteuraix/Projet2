@@ -55,7 +55,7 @@ img
 
 /* EN-TETE */
     /* logo */
-header div
+#LOGO
 {
     width: 100px;
     margin: 15px 0px 20px 15px;
@@ -71,6 +71,7 @@ header div
     font-weight: bold;
     width: 100px;
 }
+
     /* navigation */
 header nav
 {
@@ -80,16 +81,17 @@ header nav
 
 header nav a
 {
-
     width: 50%;
-    display: flex;
-    justify-content: center;
 }
 
 #navha
 {
     border-bottom: solid 3px #F2F2F2;
     height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 #navha:hover
@@ -244,7 +246,7 @@ header li p
     flex-direction: row;
     justify-content: flex-start;
     width: 95%;
-    margin-left: 20px;
+    margin: 0px 0px 20px 20px;
 }
 
 #INFO i
@@ -252,7 +254,7 @@ header li p
     color: #0065FC;
     border: solid #F2F2F2 2px;
     border-radius: 25px;
-    width: 25px;
+    width: 30px;
     height: 25px;
     display: flex;
     justify-content: center;
