@@ -39,16 +39,27 @@ img
 
 /* ETOILES */
 
-#BLEU
+.BLEU
 {
     color: #0065FC;
     font-size: 0.8em;
 }
 
-#GRIS
+.GRIS
 {
     color: #F2F2F2;
     font-size: 0.8em;
+}
+
+.etoiles
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.etoiles p
+{
+    margin: 2px;
 }
 
 
@@ -87,7 +98,7 @@ header nav
     font-size: 1.2em;
 }
 
-#navha
+#navha1 , #navha2
 {
     border-top: solid 3px #F2F2F2;
     height: 155px;
@@ -98,7 +109,7 @@ header nav
     justify-content: center;
 }
 
-#navha:hover
+#navha1:hover , #navha2:hover
 {
     border-top: solid 3px #0065FC;
     color: #0065FC;
@@ -339,6 +350,13 @@ header li p
     height: 165px;
 }
 
+#POP article .etoiles
+{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+}
+
 #POP article img
 {
     width: 134px;
@@ -347,22 +365,11 @@ header li p
     margin: 5px;
 }
 
-#POP article h4 , #POP article p
-{
-    margin: 12px 0px 0px 12px ;
-}
-
-#POP article div
+#POP .description
 {
     height: 100%;
     position: relative;
-}
-
-#POP article span
-{
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
+    padding-left: 15px;
 }
 
 
@@ -409,9 +416,14 @@ header li p
     justify-content: space-around;
 }
 
-#vignheb div h4 , #vignheb div p , #vignheb div span
+#vignheb .description
 {
-    margin: 0px 0px 8px 15px;
+    padding-left: 15px;
+}
+
+#vignheb div h4 , #vignheb div p
+{
+    margin: 5px 3px 5px 0px;
 }
 
 #AFF
@@ -442,12 +454,12 @@ header li p
     margin: 0px 0px 20px 0px;
 }
 
-#PACT
+#PACT1 , #PACT2 , #PACT3 , #PACT4
 {
     height: 190px;
 }
 
-#GACT
+#GACT1 , #GACT2
 {
     height: 400px;
     width: 20%;
@@ -459,12 +471,12 @@ header li p
     border-radius: 20px 20px 0px 0px;
 }
 
-#PACT a img
+#PACT1 a img , #PACT2 a img , #PACT3 a img , #PACT4 a img 
 {
     height: 135px;
 }
 
-#GACT a img
+#GACT1 a img , #GACT2 a img
 {
     height: 335px;
 }
