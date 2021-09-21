@@ -292,10 +292,11 @@ header li p
 #POP
 {
     background-color: #F2F2F2;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #POP article
@@ -303,7 +304,7 @@ header li p
     background-color: white;
     border-radius: 20px;
     width: 47%;
-    margin: 0px 0px 10px 10px;
+    margin: 0px 10px 10px 10px;
 }
 
 #POP article a
@@ -361,7 +362,7 @@ header li p
 {
     height: 220px;
     width: 47%;
-    margin: 0px 0px 10px 10px ;
+    margin: 0px 10px 10px 10px ;
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
@@ -372,6 +373,7 @@ header li p
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #vignheb div h4 , #vignheb div p , #vignheb div span
@@ -399,10 +401,10 @@ header li p
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 0px;
 }
 
-#ACT span
+#ACT div
 {
     width: 48%;
 }
@@ -445,6 +447,7 @@ header li p
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
@@ -457,7 +460,7 @@ footer
 
 footer div
 {
-    padding: 20px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 #pied

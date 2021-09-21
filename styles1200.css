@@ -15,9 +15,15 @@ html
 
 /* decorations generales */
 
+body
+{
+    margin: 0px;
+}
+
 a
 {
     text-decoration: none;
+    color: black;
 }
 
 aside a:visited , header nav a:visited
@@ -48,65 +54,69 @@ img
 
 
 /* EN-TETE */
-
-header div
+header
 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
+    padding-left: 50px;
 }
-
-header div a
+    /*logo*/
+#LOGO
 {
-    font-weight: bolder;
+    width: 100px;
+    margin: 45px 0px 20px 15px;
+}
+    /* s'inscrire */
+#inscription
+{
     color: #0065FC;
-    margin-top: 15px;
-    font-size: 1.3em;
+    font-weight: bold;
+    order: 2;
+    display: flex;
+    align-items: center;
 }
 
+    /* navigation */
 header nav
 {
-    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    width: 525px;
+    font-size: 1.2em;
 }
 
-header nav a:hover
+#navha
 {
-    color: #0065FC;
-    border-bottom: #0065FC solid 3px;
-}
-
-header nav div
-{
-    height: 45px;
+    border-top: solid 3px #F2F2F2;
+    height: 155px;
+    width: 35%;
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
-header nav a
+#navha:hover
 {
-    width: 50%;
-    border-bottom: #F2F2F2 solid 3px;
+    border-top: solid 3px #0065FC;
+    color: #0065FC;
 }
 
 
 
 /* RECHERCHE */
 
-header section
+header section h1
 {
-    margin: 10px;
-}
-
-header section h4
-{
-    padding-top: 15px;
+    padding: 10px 0px 0px 20px;
+    font-size: 1.4em;
 }
 
 header section p
 {
-    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 header ul
@@ -123,24 +133,33 @@ header ul
     background-color: #F2F2F2 ;
     padding: 15px;
     border-radius: 12px 0px 0px 12px;
+    display: flex;
+    justify-content: center;
 }
 
 #LOUPE
 {
     height: 15px;
-    color: white;
-    background-color: #0065FC;
-    padding: 15px;
-    border-radius: 0px 12px 12px 0px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+}
+
+#ICL
+{
+    display: none;
 }
 
 #TXT
 {
-    padding-top: 8px;
+    background-color: #0065FC;
+    width: 100px;
+    color: white;
+    font-weight: bolder;
+    margin: 0px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 12px 12px 0px;
 }
+
 
     /* barre de recherche */
 
@@ -148,8 +167,15 @@ header ul
 {
     border: #F2F2F2 1px solid ;
     border-radius: 12px;
-    width: 450px;
-    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 20px 0px 20px;
+    width: 445px;
+}
+
+#BARECH div
+{
+    margin: 0px;
 }
 
 #INTFORM
@@ -159,11 +185,13 @@ header ul
     margin-left: 10px;
     color: black;
     border: none;
+    width: 100%;
+    height: 95%;
 }
 
-#ICL
+#entree
 {
-    display: none;
+    width: 280px;
 }
 
 
@@ -173,22 +201,22 @@ header ul
 #filtres
 {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 1.2em;
 }
 
-#filtres h4
+header h4
 {
-    padding-top: 7px;
-    margin-right: 20px;
+    margin: 35px 0px 0px 20px;
 }
 
 header ul
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0px;
-    width: 775px;
 }
 
 header li
@@ -196,12 +224,11 @@ header li
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 40px;
+    height: 50px;
     width: auto;
     border: solid #d9d9d9 2px ;
     border-radius: 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0px 0px 15px 30px ;
 }
 
 header li:hover
@@ -213,9 +240,9 @@ header li span
 {
     color: #0065FC ;
     background-color: #DEEBFF;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,10 +250,8 @@ header li span
 
 header li p
 {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 8px;
-    font-weight: bold;
+    padding: 0px 20px 0px 15px ;
+    font-weight: bold ;
 }
 
 
@@ -238,23 +263,34 @@ header li p
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 30px;
+    width: 95%;
+    margin: 0px 0px 20px 20px;
 }
 
 #INFO i
 {
-    background-color: #0065FC ;
-    color: white;
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
-    border: solid 2px #d9d9d9 ;
-    padding: 0px;
+    color: #0065FC;
+    border: solid #F2F2F2 2px;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
 }
 
 #INFO span
 {
-    margin-left: 10px;
+    margin: 5px 0px 20px 10px;
+}
+
+/* POP & HEB */
+
+#POPHEB
+{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 
@@ -264,8 +300,8 @@ header li p
 {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    padding-bottom: 0px;
+    width: 80%;
+    margin-top: 30px;
 }
 
 #POPET i
@@ -277,91 +313,79 @@ header li p
 #POP
 {
     background-color: #F2F2F2;
-    padding-bottom: 10px;
-    width: 375px;
+    padding-bottom: 20px;
+    margin: 0px 60px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
+    border-radius: 25px;
+    align-items: center;
 }
 
 #POP article
 {
     background-color: white;
     border-radius: 20px;
-    padding-bottom: 3px;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 90%;
+    width: 80%;
+    margin: 0px 10px 10px 10px;
 }
 
 #POP article a
 {
     display: flex;
     flex-direction: row;
-    height: 135px;
+    height: 165px;
 }
 
 #POP article img
 {
     width: 134px;
-    height: 127px;
+    height: 94%;
     border-radius: 20px 0px 0px 20px;
     margin: 5px;
 }
 
+#POP article h4 , #POP article p
+{
+    margin: 12px 0px 0px 12px ;
+}
+
 #POP article div
 {
-    margin-left: 10px;
+    height: 100%;
+    position: relative;
 }
 
-#POP article div h4
+#POP article span
 {
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-#POP article div p
-{
-    margin-top: 10px;
-}
-
-#POP article div span
-{
-
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
 }
 
 
-
-/* inversion POP-HEB */
-
-#POPHEB
-{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
 
 /* HEBERGEMENTS */
 
-#HEB h1
-{
-    margin-left: 10px;
-}
-
-#vignheb
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 
 #HEB
 {
-    padding: 10px;
     background-color: #F2F2F2;
-    width: 825px;
+    margin-left: 60px;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+#HEB h2
+{
+    margin: 20px 0px 20px 20px;
 }
 
 #HEB a img
 {
-    height: 110px;
+    height: 125px;
     width: 97%;
     border-radius: 20px 20px 0px 0px;
     padding: 5px;
@@ -369,78 +393,64 @@ header li p
 
 #HEB article
 {
-    height: 185px;
-    width: 250px;
-    margin: auto;
-    margin-bottom: 15px;
+    height: 220px;
+    width: 31%;
+    margin: 0px 10px 10px 10px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
-    padding-bottom: 10px;
 }
 
-#HEB h4 , #HEB p , #HEB span
+#vignheb
 {
-    margin: 2px;
-    margin-left: 5px;
-}
-
-#HEB div
-{
-    margin-left: 10px;
-}
-
-#AFF
-{
-    padding-top: 20px;
-}
-
-
-
-/* ACTIVITES */
-
-#ACT
-{
-    padding: 20px;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#ACT h1
+#vignheb div h4 , #vignheb div p , #vignheb div span
 {
+    margin: 0px 0px 8px 15px;
+}
+
+#AFF
+{
+    padding: 10px 0px 0px 20px;
+}
+
+
+
+/* ACTIVITES */
+
+#ACT h2
+{
+    margin: 45px 20px 20px 70px ;
     width: 100%;
+}
+
+#ACT div
+{
+    width: 20%;
 }
 
 #ACT article
 {
-    width: 375px;
-    margin-bottom: 25px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
+    margin: 0px 0px 20px 0px;
 }
 
 #PACT
 {
-    height: 200px;
-}
-
-#PACT a img 
-{
-    height: 140px;
+    height: 190px;
 }
 
 #GACT
 {
-    height: 425px;
-}
-
-#GACT a img
-{
-    height: 340px;
+    height: 400px;
+    width: 20%;
 }
 
 #ACT a img
@@ -449,11 +459,29 @@ header li p
     border-radius: 20px 20px 0px 0px;
 }
 
-#ACT h4
+#PACT a img
 {
-    margin-left: 25px;
+    height: 135px;
 }
 
+#GACT a img
+{
+    height: 335px;
+}
+
+#ACT h4
+{
+    margin: 12px 0px 0px 20px;
+}
+
+#ACT
+{
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 
 /* PIED DE PAGE */
@@ -461,18 +489,14 @@ header li p
 footer
 {
     background-color: #F2F2F2;
-    padding: 20px;
-}
-
-footer div
-{
-    padding-bottom: 15px;
+    font-size: 1.2em;
 }
 
 #pied
 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 800px;
+    width: 1200px;
+    padding: 30px 0px 30px 70px;
 }

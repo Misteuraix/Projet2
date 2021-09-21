@@ -273,7 +273,7 @@ header li p
 #POPET
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px 20px 0px 20px;
 }
 
@@ -286,15 +286,14 @@ header li p
 #POP
 {
     background-color: #F2F2F2;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 #POP article
 {
     background-color: white;
     border-radius: 20px;
-    width: 90%;
-    margin: 0px 20px 10px 20px;
+    margin: 0px 10px 10px 10px;
 }
 
 #POP article a
@@ -351,7 +350,6 @@ header li p
 #HEB article
 {
     height: 220px;
-    width: 90%;
     margin: 0px 20px 15px 20px ;
     border-radius: 20px;
     background-color: white;
