@@ -93,7 +93,7 @@ header nav
     width: 40%;
 }
 
-#navha1 , #navha2
+.navha
 {
     border-top: solid 3px #F2F2F2;
     height: 65px;
@@ -104,7 +104,7 @@ header nav
     justify-content: center;
 }
 
-#navha1:hover , #navha2:hover
+.navha:hover
 {
     border-top: solid 3px #0065FC;
     color: #0065FC;
@@ -174,7 +174,7 @@ header ul
     border: #F2F2F2 1px solid ;
     border-radius: 12px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     margin: 30px 20px 0px 20px;
     width: 445px;
 }
@@ -284,6 +284,18 @@ header li p
 }
 
 
+
+/* Vignettes */
+
+article
+{
+    border-radius: 20px;
+    background-color: white;
+    min-width: 250px;
+}
+
+
+
 /* POPULAIRES */
 
 #POPET
@@ -312,10 +324,9 @@ header li p
 
 #POP article
 {
-    background-color: white;
-    border-radius: 20px;
     width: 31%;
     margin: 0px 10px 10px 10px;
+    min-width: 300px;
 }
 
 #POP article a
@@ -370,8 +381,6 @@ header li p
     height: 220px;
     width: 31%;
     margin: 0px 10px 10px 10px;
-    border-radius: 20px;
-    background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
 }
 
@@ -414,18 +423,16 @@ header li p
 
 #ACT article
 {
-    border-radius: 20px;
-    background-color: white;
     box-shadow: 3px 3px 15px 2px #d9d9d9;
     margin: 0px 0px 20px 0px;
 }
 
-#PACT1 , #PACT2 , #PACT3 , #PACT4
+.PACT
 {
     height: 190px;
 }
 
-#GACT1 , #GACT2
+.GACT
 {
     height: 400px;
     width: 48%;
@@ -437,12 +444,12 @@ header li p
     border-radius: 20px 20px 0px 0px;
 }
 
-#PACT1 a img , #PACT2 a img , #PACT3 a img , #PACT4 a img
+.PACT a img
 {
     height: 135px;
 }
 
-#GACT1 a img , #GACT2 a img
+.GACT a img
 {
     height: 335px;
 }
